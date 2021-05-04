@@ -51,10 +51,8 @@ Keep last two columns
 ```console
 sed 's/CM000685.2//' wt.extract.new > wt.extract
 sed 's/CM000685.2//' tumor.extract.new > tumor.extract
-
-
-
-
-
-
-
+```
+Run 
+```console
+python3 rd_plot.py
+```
