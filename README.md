@@ -44,13 +44,13 @@ grep "CM000685" wt.deduplicated.coverage > wt.chrx.coverage
 
 Subset to the region of interest
 ```console
-sed -n '/20000000/,/40000000/p' tumor.chrx.coverage > tumor.extract
-sed -n '/20000000/,/40000000/p' wt.chrx.coverage > wt.extract
+sed -n '/20000000/,/40000000/p' tumor.chrx.coverage > tumor.extract.new
+sed -n '/20000000/,/40000000/p' wt.chrx.coverage > wt.extract.new
 ```
-
-
-
-
+Keep last two columns
+```console
+sed 's/CM000685.2//' wt.extract.new > wt.extract
+sed 's/CM000685.2//' tumor.extract.new > tumor.extract
 
 
 
